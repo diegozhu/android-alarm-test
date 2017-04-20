@@ -60,27 +60,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="查看所有"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="22dp"
-        android:layout_marginEnd="22dp"
-        android:id="@+id/btnGet"
-        android:layout_alignBottom="@+id/btnSet"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4" />
-
-    <Button
-        android:text="清空日志"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnClearLog"
-        android:layout_alignBaseline="@+id/btnGet"
-        android:layout_alignBottom="@+id/btnGet"
-        android:layout_toRightOf="@+id/btnGet"
-        android:layout_toEndOf="@+id/btnGet" />
-
     <TextView
         android:text="（点击选择时间）"
         android:layout_width="wrap_content"
@@ -110,15 +89,6 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="取消所有提醒"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCancel"
-        android:layout_above="@+id/btnClearLog"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
         android:text="确定时间"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -126,4 +96,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

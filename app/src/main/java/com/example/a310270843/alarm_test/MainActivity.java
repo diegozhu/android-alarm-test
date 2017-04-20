@@ -19,7 +19,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    static Button btnSet, btnGet, btnOK, btnCancel, btnClearLog;
+    static Button btnSet, btnOK;
     static TimePicker timePicker;
     static TextView textViewTime, textViewText, textViewLog;
     static NotificationManager nm;
@@ -45,10 +45,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(mr,ifr);
 
         btnSet = (Button) findViewById(R.id.btnSet);
-        btnGet = (Button) findViewById(R.id.btnGet);
         btnOK = (Button) findViewById(R.id.btnOK);
-        btnCancel = (Button) findViewById(R.id.btnCancel);
-        btnClearLog = (Button) findViewById(R.id.btnClearLog);
         timePicker = (TimePicker) findViewById(R.id.timePicker);
         textViewTime = (TextView) findViewById(R.id.textviewseletetime);
         textViewText = (TextView) findViewById(R.id.editText2);
@@ -79,11 +76,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnGet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
         btnSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
