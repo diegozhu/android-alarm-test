@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
     static NotificationManager nm;
     static final String BAMA_ALARM_ACTION = "bama.alarm.test";
     AlarmManager am;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,9 +101,6 @@ public class MainActivity extends AppCompatActivity {
                 textViewText.setText("".toCharArray(), 0, 0);
             }
         });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     public static void log(String ss) {
